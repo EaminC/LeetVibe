@@ -1,0 +1,61 @@
+---
+title: "Two Sum"
+leetcodeUrl: "https://leetcode.com/problems/two-sum/"
+difficulty: "Easy"
+tags:
+  - Array
+  - Hash Table
+date: "2026-10-06"
+status: "Solved"
+summary: "Use a hash map to remember complements while scanning once."
+---
+
+## Problem
+
+Given an integer array `nums` and an integer `target`, return the indices of the
+two numbers such that they add up to `target`.
+
+## Vibe
+
+The tempting brute-force idea is to try every pair. The AI-assisted nudge is to
+invert the question: when reading `num`, ask whether we have already seen
+`target - num`.
+
+## Solution
+
+Keep a hash map from value to index. For each number:
+
+1. Compute its complement.
+2. If the complement is already in the map, return both indices.
+3. Otherwise, store the current number and continue.
+
+## Implementation
+
+```ts
+function twoSum(nums: number[], target: number): number[] {
+  const seen = new Map<number, number>();
+
+  for (let index = 0; index < nums.length; index += 1) {
+    const complement = target - nums[index];
+    const match = seen.get(complement);
+
+    if (match !== undefined) {
+      return [match, index];
+    }
+
+    seen.set(nums[index], index);
+  }
+
+  return [];
+}
+```
+
+## Complexity
+
+- Time: `O(n)` because each number is visited once.
+- Space: `O(n)` for the hash map in the worst case.
+
+## Reflection
+
+The key pattern is "look backward with memory." When a problem asks for a pair
+with a target relation, a map often turns nested search into a single pass.

@@ -4,7 +4,8 @@ import { getAllProblems, getProblemStats } from "@/lib/problems";
 
 export const metadata: Metadata = {
   title: "Problems",
-  description: "LeetVibe problem notes and AI-assisted reflections.",
+  description:
+    "LeetVibe problem notes, learning traces, and final implementations.",
 };
 
 export default function ProblemsPage() {

@@ -1,15 +1,16 @@
 # LeetVibe
 
-LeetVibe is an AI-assisted LeetCode practice journal.
+LeetVibe is a LeetCode learning journal.
 
-The idea is simple: pick a problem, reason through it with AI, implement the
-solution, and keep the final note as a durable record. Each entry captures not
-only the answer, but also the thinking path that made the answer stick.
+The idea is simple: pick a problem, learn through an AI conversation, implement
+the solution, and keep the final note as a durable record. This project does not
+connect to an AI API. It records what AI helped me understand and the code I
+eventually want to keep.
 
 ## Workflow
 
 1. Pick a LeetCode problem.
-2. Talk through the constraints, edge cases, and solution ideas with AI.
+2. Talk through the constraints, edge cases, and solution ideas elsewhere.
 3. Implement the solution yourself.
 4. Add one note under `content/problems`.
 5. Push to GitHub and let Vercel publish the updated journal.
@@ -41,7 +42,7 @@ summary: "Use a hash map to remember complements while scanning once."
 Suggested sections:
 
 - `Problem`: short problem summary
-- `Vibe`: the AI-assisted reasoning path
+- `Vibe`: what the AI conversation taught me, including hints and mistakes
 - `Solution`: final approach
 - `Implementation`: code
 - `Complexity`: time and space complexity

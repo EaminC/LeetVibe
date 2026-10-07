@@ -7,7 +7,8 @@ export const metadata: Metadata = {
     default: "LeetVibe",
     template: "%s | LeetVibe",
   },
-  description: "An AI-assisted LeetCode practice journal.",
+  description:
+    "A LeetCode journal for recording what I learned from AI discussions and the final code.",
 };
 
 export default function RootLayout({

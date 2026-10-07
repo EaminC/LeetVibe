@@ -10,12 +10,12 @@ export default function Home() {
     <>
       <section className="hero">
         <div>
-          <p className="eyebrow">AI-assisted LeetCode journal</p>
+          <p className="eyebrow">LeetCode learning journal</p>
           <h1>LeetVibe</h1>
           <p className="lead">
-            A practice log for solving LeetCode with AI as a thinking partner:
-            problem, vibe, implementation, complexity, and reflection in one
-            place.
+            A practice log for capturing what AI helped me understand, the
+            final implementation, complexity notes, and reflections from each
+            LeetCode session.
           </p>
           <div className="actions">
             <Link href="/problems" className="button">
@@ -36,7 +36,7 @@ export default function Home() {
           <h2>Pick. Vibe. Solve. Reflect.</h2>
           <p className="muted">
             Each entry starts from a LeetCode problem and ends as a durable note:
-            the final solution plus the reasoning path that got there.
+            what I learned, where I got unstuck, and the code I would keep.
           </p>
           <div className="stat-grid">
             <div className="stat">
